@@ -1,4 +1,4 @@
-# ArgusRazorFriends
+# ARMC - Friends Plugin
 
 > Plugin moderno, ligero y modular de **Amigos y Grupos (Party)** para servidores de Minecraft Paper y Spigot, optimizado para Minecraft 26.3 con soporte retrocompatible.
 
@@ -52,3 +52,8 @@
   mvn clean package
   ```
   El artefacto resultante se genera en `target/ArgusRazorFriends-1.0.0-MC26.3.jar`.
+
+---
+
+
+© 2026 Joqueselo. Todos los derechos reservados.
