@@ -1,0 +1,30 @@
+# ==============================================================================
+# Git Ignore para ArgusRazorFriends
+# ==============================================================================
+
+# Artefactos de compilacion y binarios
+target/
+libs/
+*.jar
+
+# Bases de datos y caches locales
+*.db
+database.db
+
+# Configuraciones de IDEs (IntelliJ, VS Code, Eclipse)
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Archivos personales y scripts locales (excluidos segun solicitud)
+readme_alt.md
+build.bat
+build.ps1
+
+# Archivos del sistema y logs
+*.log
+.DS_Store
+Thumbs.db

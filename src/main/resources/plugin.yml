@@ -1,0 +1,38 @@
+name: ArgusRazorFriends
+version: 1.0.0-MC26.3
+main: com.argusrazor.friends.ArgusRazorFriendsPlugin
+api-version: '1.21'
+author: ArgusRazor
+description: Sistema moderno de Amigos y Grupos compatible con Minecraft 26.3 y Paper/Spigot.
+softdepend: [PlaceholderAPI]
+
+commands:
+  friend:
+    description: Comando principal para gestionar amigos.
+    aliases: [f, amigos, amigo]
+    usage: /friend [help|add|remove|accept|deny|list|msg|gui|toggle]
+  friendsgui:
+    description: Abre la interfaz grafica del menu de amigos.
+    aliases: [fgui, amigogui]
+    usage: /friendsgui
+  party:
+    description: Comando principal para gestionar grupos (parties).
+    aliases: [p, grupo, grupos]
+    usage: /party [help|invite|accept|deny|kick|leave|leader|chat|gui]
+  partygui:
+    description: Abre la interfaz grafica del menu de grupo.
+    aliases: [pgui, grupogui]
+    usage: /partygui
+  argusfriends:
+    description: Comando administrativo del plugin ArgusRazorFriends.
+    aliases: [af, arfriends]
+    permission: argusfriends.admin
+    usage: /argusfriends [reload|info|version]
+
+permissions:
+  argusfriends.use:
+    description: Permite usar los comandos basicos de amigos y grupo.
+    default: true
+  argusfriends.admin:
+    description: Permite recargar y administrar el plugin.
+    default: op

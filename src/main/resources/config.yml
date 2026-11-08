@@ -1,0 +1,61 @@
+# ==============================================================================
+#                      ARGUS RAZOR FRIENDS - CONFIGURACION
+#                            Compatible con MC 26.3
+# ==============================================================================
+
+# Opciones de almacenamiento: SQLite (por defecto, no requiere servidor MySQL) o MySQL
+Storage: SQLite
+
+SQLite:
+  FileName: database.db
+
+MySQL:
+  Host: localhost
+  Port: 3306
+  Database: friends
+  Username: root
+  Password: password
+  TablePrefix: fr_
+  UseSSL: false
+  Pool:
+    MaxConnections: 10
+    MinIdle: 2
+    TimeoutMs: 30000
+
+General:
+  Language: es
+  MaxFriends: 50
+  MaxPartySize: 6
+  RequestTimeoutSeconds: 60
+  
+  # Notificaciones en chat
+  NotifyFriendJoin: true
+  NotifyFriendQuit: true
+  
+  # Seguridad y mecanicas de juego (deshabilitadas para servidores competitivos / 26.3)
+  AllowFriendJump: false
+  SendRequestOnPunch: false
+  SendRequestOnShiftRightClick: false
+
+GUI:
+  FriendsMenu:
+    Title: "&8Menu de Amigos (Pagina {PAGE}/{MAX_PAGE})"
+    Rows: 6
+    ShowOfflineSkin: true
+    SoundOnClick: "UI_BUTTON_CLICK"
+    SoundOnPageSwitch: "ITEM_BOOK_PAGE_TURN"
+  
+  PartyMenu:
+    Title: "&8Menu de Grupo"
+    Rows: 4
+  
+  SettingsMenu:
+    Title: "&8Ajustes de Privacidad"
+    Rows: 3
+
+Sounds:
+  Enabled: true
+  FriendRequest: "ENTITY_PLAYER_LEVELUP"
+  FriendJoin: "BLOCK_NOTE_BLOCK_PLING"
+  FriendQuit: "BLOCK_NOTE_BLOCK_BASS"
+  PartyChat: "ENTITY_EXPERIENCE_ORB_PICKUP"
